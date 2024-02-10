@@ -1,0 +1,156 @@
+:root {
+  /* ### Primary */
+
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  color: var(--Wenge-Brown);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Eggshell);
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.6rem;
+}
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+}
+h2 {
+  color: var(--Nutmeg);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+li {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.6rem;
+  color: var(--Wenge-Brown);
+}
+.card-container {
+  width: 650px;
+  background-color: var(--White);
+  overflow: hidden;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+.picture img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.introduction h1 {
+  color: var(--Dark-Charcoal);
+  font-size: 3rem;
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
+.prep-time {
+  background-color: var(--Rose-White);
+  border-radius: 1rem;
+  margin: 2rem 0;
+  padding: 1.2rem;
+}
+.prep-time h3 {
+  color: var(--Dark-Raspberry);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+li::marker {
+  color: var(--Nutmeg);
+}
+.prep-time li {
+  margin: 1.5rem 4rem;
+  padding-left: 1.5rem;
+}
+.bold {
+  font-weight: 600;
+}
+.ingredients li {
+  margin-left: 2rem;
+
+  padding: 1rem;
+}
+.ingredients {
+  border-bottom: 1px solid var(--Light-Grey);
+  padding-bottom: 2rem;
+}
+.instructions {
+  margin-left: 1rem;
+  border-bottom: 1px solid var(--Light-Grey);
+  padding-bottom: 2rem;
+}
+.instructions li {
+  margin: 1.5rem;
+  padding-left: 1rem;
+}
+ol li::marker {
+  font-weight: 800;
+}
+table {
+  font-size: 1.6rem;
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid var(--Light-Grey);
+  line-height: 4rem;
+}
+tr:last-child {
+  border-bottom: none;
+}
+td {
+  padding-left: 2rem;
+}
+
+.nutrition-data {
+  color: var(--Nutmeg);
+  font-weight: 800;
+}
+
+@media screen and (max-width: 700px) {
+  .card-container {
+    width: 350px;
+    background-color: var(--White);
+    overflow: hidden;
+    padding: 3rem;
+    border-radius: 0;
+  }
+
+  .picture img {
+    margin-left: -3rem;
+    margin-top: -3rem;
+    width: calc(100% + 3rem + 3rem);
+    border-radius: 0;
+  }
+}
